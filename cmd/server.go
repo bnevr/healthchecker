@@ -31,8 +31,6 @@ func handleRemote(w http.ResponseWriter, r *http.Request) {
     fmt.Fprintf(w, "ok")
 }
 
-
-
 func runServer() {
     http.HandleFunc("/healthz", handleHealth)
     http.HandleFunc("/disk", handleDisk)
